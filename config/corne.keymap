@@ -19,19 +19,19 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-&none  &kp Q             &kp W  &kp E               &kp R               &kp T                   &kp Y                   &kp U                &kp I          &kp O    &kp P        &none
-&none  &mt LEFT_SHIFT A  &kp S  &mt LEFT_CONTROL D  &mt LEFT_COMMAND F  &mt LEFT_ALT G          &kp H                   &mt RIGHT_COMMAND J  &kp K          &kp L    &kp SEMI     &none
-&none  &kp Z             &kp X  &kp C               &kp V               &kp B                   &kp N                   &kp M                &kp COMMA      &kp DOT  &lt 1 SLASH  &none
-                                &kp LS(LA(SPACE))   &lt 2 ENTER         &mt LEFT_CONTROL TAB    &mt RIGHT_SHIFT DELETE  &lt 3 SPACE          &kp LG(SPACE)
+&none  &kp Q  &kp W  &kp E               &kp R               &kp T                   &kp Y                      &kp U                &kp I      &kp O    &kp P      &none
+&none  &kp A  &kp S  &mt LEFT_CONTROL D  &mt LEFT_COMMAND F  &mt LEFT_ALT G          &kp H                      &mt RIGHT_COMMAND J  &kp K      &kp L    &kp SEMI   &none
+&none  &kp Z  &kp X  &kp C               &kp V               &kp B                   &kp N                      &kp M                &kp COMMA  &kp DOT  &kp SLASH  &none
+                     &kp LS(LA(SPACE))   &lt 2 ENTER         &mt LEFT_CONTROL TAB    &mt RIGHT_SHIFT BACKSPACE  &lt 3 SPACE          &tog 1
             >;
         };
 
         colmak {
             bindings = <
-&none  &kp Q             &kp W  &kp F               &kp P               &kp B             &kp J   &kp L                &kp U          &kp Y    &kp SEMI     &none
-&none  &mt LEFT_SHIFT A  &kp R  &mt LEFT_CONTROL S  &mt LEFT_COMMAND T  &mt LEFT_ALT G    &kp M   &mt RIGHT_COMMAND N  &kp E          &kp I    &kp O        &none
-&none  &kp Z             &kp X  &kp C               &kp D               &kp V             &kp K   &kp H                &kp COMMA      &kp DOT  &lt 0 SLASH  &none
-                                &trans              &trans              &trans            &trans  &trans               &kp LG(SPACE)
+&none  &kp Q             &kp W  &kp F               &kp P               &kp B             &kp J   &kp L                &kp U      &kp Y    &kp SEMI     &none
+&none  &mt LEFT_SHIFT A  &kp R  &mt LEFT_CONTROL S  &mt LEFT_COMMAND T  &mt LEFT_ALT G    &kp M   &mt RIGHT_COMMAND N  &kp E      &kp I    &kp O        &none
+&none  &kp Z             &kp X  &kp C               &kp D               &kp V             &kp K   &kp H                &kp COMMA  &kp DOT  &lt 0 SLASH  &none
+                                &trans              &trans              &trans            &trans  &trans               &tog 0
             >;
         };
 
