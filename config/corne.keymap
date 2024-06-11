@@ -28,14 +28,14 @@
 
         colmak {
             bindings = <
-&none  &kp Q             &kp W  &kp F               &kp P               &kp B             &kp J   &kp L                &kp U      &kp Y    &kp SEMI     &none
-&none  &mt LEFT_SHIFT A  &kp R  &mt LEFT_CONTROL S  &mt LEFT_COMMAND T  &mt LEFT_ALT G    &kp M   &mt RIGHT_COMMAND N  &kp E      &kp I    &kp O        &none
-&none  &kp Z             &kp X  &kp C               &kp D               &kp V             &kp K   &kp H                &kp COMMA  &kp DOT  &lt 0 SLASH  &none
+&none  &kp Q             &kp W  &kp F               &kp P               &kp B             &kp J   &kp L                &kp U      &kp Y    &kp SEMI   &none
+&none  &mt LEFT_SHIFT A  &kp R  &mt LEFT_CONTROL S  &mt LEFT_COMMAND T  &mt LEFT_ALT G    &kp M   &mt RIGHT_COMMAND N  &kp E      &kp I    &kp O      &none
+&none  &kp Z             &kp X  &kp C               &kp D               &kp V             &kp K   &kp H                &kp COMMA  &kp DOT  &kp SLASH  &none
                                 &trans              &trans              &trans            &trans  &trans               &tog 0
             >;
         };
 
-        raise_layer {
+        sym+numpad {
             // -----------------------------------------------------------------------------------------
             // |  TAB |  !  |  @  |  #  |  $  |  %  |   |  ^  |  &  |  *  |  (  |  )  | BKSP |
             // | CTRL |     |     |     |     |     |   |  -  |  =  |  [  |  ]  |  \  |  `   |
