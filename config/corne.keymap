@@ -12,18 +12,25 @@
 
 / {
     behaviors {
-        open_curly: open_curly {
+        B_Parenth: B_Parenth {
             compatible = "zmk,behavior-tap-dance";
-            label = "OPEN_CURLY";
+            label = "B_PARENTH";
             #binding-cells = <0>;
-            bindings = <&kp B>, <&kp LEFT_PARENTHESIS>;
+            bindings = <&kp B>, <&kp LEFT_PARENTHESIS>, <&kp RIGHT_PARENTHESIS>;
         };
 
-        close_curly: close_curly {
+        G_Parenth: G_Parenth {
             compatible = "zmk,behavior-tap-dance";
-            label = "CLOSE_CURLY";
+            label = "G_PARENTH";
             #binding-cells = <0>;
-            bindings = <&kp B>, <&kp B>, <&kp RIGHT_PARENTHESIS>;
+            bindings = <&kp G>, <&kp LEFT_BRACKET>, <&kp RIGHT_BRACKET>;
+        };
+
+        V_Parenth: V_Parenth {
+            compatible = "zmk,behavior-tap-dance";
+            label = "V_PARENTH";
+            #binding-cells = <0>;
+            bindings = <&kp V>, <&kp LEFT_BRACE>, <&kp RIGHT_BRACE>;
         };
     };
 
@@ -47,7 +54,7 @@
 
         colmak {
             bindings = <
-&none  &kp Q             &kp W  &kp F               &kp P               &kp B             &kp J   &kp L                &kp U      &kp Y    &kp SEMI   &none
+&none  &kp Q             &kp W  &kp F               &kp P               &B_Parenth        &kp J   &kp L                &kp U      &kp Y    &kp SEMI   &none
 &none  &mt LEFT_SHIFT A  &kp R  &mt LEFT_CONTROL S  &mt LEFT_COMMAND T  &mt LEFT_ALT G    &kp M   &mt RIGHT_COMMAND N  &kp E      &kp I    &kp O      &none
 &none  &kp Z             &kp X  &kp C               &kp D               &kp V             &kp K   &kp H                &kp COMMA  &kp DOT  &kp SLASH  &none
                                 &trans              &trans              &trans            &trans  &trans               &to 0
