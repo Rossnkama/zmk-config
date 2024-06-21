@@ -12,25 +12,25 @@
 
 / {
     behaviors {
-        B_Parenth: B_Parenth {
+        J_Parenth: J_Parenth {
             compatible = "zmk,behavior-tap-dance";
-            label = "B_PARENTH";
+            label = "J_PARENTH";
             #binding-cells = <0>;
-            bindings = <&kp B>, <&kp LEFT_PARENTHESIS>, <&kp RIGHT_PARENTHESIS>;
+            bindings = <&kp J>, <&kp LEFT_PARENTHESIS>, <&kp RIGHT_PARENTHESIS>;
         };
 
-        G_Parenth: G_Parenth {
+        M_Parenth: M_Parenth {
             compatible = "zmk,behavior-tap-dance";
-            label = "G_PARENTH";
+            label = "M_PARENTH";
             #binding-cells = <0>;
-            bindings = <&kp G>, <&kp LEFT_BRACKET>, <&kp RIGHT_BRACKET>;
+            bindings = <&kp M>, <&kp LEFT_BRACKET>, <&kp RIGHT_BRACKET>;
         };
 
-        V_Parenth: V_Parenth {
+        K_Parenth: K_Parenth {
             compatible = "zmk,behavior-tap-dance";
-            label = "V_PARENTH";
+            label = "K_PARENTH";
             #binding-cells = <0>;
-            bindings = <&kp V>, <&kp LEFT_BRACE>, <&kp RIGHT_BRACE>;
+            bindings = <&kp K>, <&kp LEFT_BRACE>, <&kp RIGHT_BRACE>;
         };
     };
 
@@ -54,7 +54,7 @@
 
         colmak {
             bindings = <
-&none  &kp Q             &kp W  &kp F               &kp P               &B_Parenth        &kp J   &kp L                &kp U      &kp Y    &kp SEMI   &none
+&none  &kp Q             &kp W  &kp F               &kp P               &kp B             &kp J   &kp L                &kp U      &kp Y    &kp SEMI   &none
 &none  &mt LEFT_SHIFT A  &kp R  &mt LEFT_CONTROL S  &mt LEFT_COMMAND T  &mt LEFT_ALT G    &kp M   &mt RIGHT_COMMAND N  &kp E      &kp I    &kp O      &none
 &none  &kp Z             &kp X  &kp C               &kp D               &kp V             &kp K   &kp H                &kp COMMA  &kp DOT  &kp SLASH  &none
                                 &trans              &trans              &trans            &trans  &trans               &to 0
