@@ -12,11 +12,18 @@
 
 / {
     behaviors {
-        parenthesis: parenthesis {
+        open_curly: open_curly {
             compatible = "zmk,behavior-tap-dance";
-            label = "PARENTHESIS";
+            label = "OPEN_CURLY";
             #binding-cells = <0>;
-            bindings = <&kp LEFT_PARENTHESIS>, <&kp RIGHT_PARENTHESIS>;
+            bindings = <&kp B>, <&kp LEFT_PARENTHESIS>;
+        };
+
+        close_curly: close_curly {
+            compatible = "zmk,behavior-tap-dance";
+            label = "CLOSE_CURLY";
+            #binding-cells = <0>;
+            bindings = <&kp B>, <&kp B>, <&kp RIGHT_PARENTHESIS>;
         };
     };
 
