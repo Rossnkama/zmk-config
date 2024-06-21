@@ -18,7 +18,7 @@
             #binding-cells = <0>;
             bindings = <&kp J>, <&kp LEFT_PARENTHESIS>, <&kp RIGHT_PARENTHESIS>;
 
-            tapping-term-ms = <120>;
+            tapping-term-ms = <185>;
         };
 
         M_Parenth: M_Parenth {
@@ -27,7 +27,7 @@
             #binding-cells = <0>;
             bindings = <&kp M>, <&kp LEFT_BRACKET>, <&kp RIGHT_BRACKET>;
 
-            tapping-term-ms = <120>;
+            tapping-term-ms = <185>;
         };
 
         K_Parenth: K_Parenth {
@@ -36,7 +36,7 @@
             #binding-cells = <0>;
             bindings = <&kp K>, <&kp LEFT_BRACE>, <&kp RIGHT_BRACE>;
 
-            tapping-term-ms = <120>;
+            tapping-term-ms = <185>;
         };
     };
 
