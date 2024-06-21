@@ -17,6 +17,8 @@
             label = "J_PARENTH";
             #binding-cells = <0>;
             bindings = <&kp J>, <&kp LEFT_PARENTHESIS>, <&kp RIGHT_PARENTHESIS>;
+
+            tapping-term-ms = <120>;
         };
 
         M_Parenth: M_Parenth {
@@ -24,6 +26,8 @@
             label = "M_PARENTH";
             #binding-cells = <0>;
             bindings = <&kp M>, <&kp LEFT_BRACKET>, <&kp RIGHT_BRACKET>;
+
+            tapping-term-ms = <120>;
         };
 
         K_Parenth: K_Parenth {
@@ -31,6 +35,8 @@
             label = "K_PARENTH";
             #binding-cells = <0>;
             bindings = <&kp K>, <&kp LEFT_BRACE>, <&kp RIGHT_BRACE>;
+
+            tapping-term-ms = <120>;
         };
     };
 
