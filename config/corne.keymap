@@ -8,9 +8,16 @@
 #include <dt-bindings/zmk/backlight.h>
 #include <dt-bindings/zmk/keys.h>
 
-&mt { flavor = "balanced"; };
-
 / {
+    behaviors {
+        Parenthasis: Parenthasis {
+            compatible = "zmk,behavior-tap-dance";
+            label = "PARENTHASIS";
+            #binding-cells = <0>;
+            bindings = <&kp LEFT_PARENTHESIS>, <&kp RIGHT_PARENTHESIS>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
