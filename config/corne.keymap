@@ -62,7 +62,7 @@
 &none  &kp Q             &kp W  &kp E               &kp R               &kp T             &kp Y   &kp U                &kp I      &kp O    &kp P      &none
 &none  &mt LEFT_SHIFT A  &kp S  &mt LEFT_CONTROL D  &mt LEFT_COMMAND F  &mt LEFT_ALT G    &kp H   &mt RIGHT_COMMAND J  &kp K      &kp L    &kp SEMI   &none
 &none  &kp Z             &kp X  &kp C               &kp V               &kp B             &kp N   &kp M                &kp COMMA  &kp DOT  &kp SLASH  &none
-                                &trans              &trans              &trans            &trans  &trans               &tog 0
+                                &trans              &trans              &trans            &trans  &trans               &to 0
             >;
         };
 
