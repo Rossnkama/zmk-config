@@ -85,10 +85,10 @@
 
         sys+brackets {
             bindings = <
-&trans  &kp ESCAPE   &trans  &kp C_VOLUME_UP    &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS    &none             &kp C_PREV            &kp C_PLAY_PAUSE  &kp C_NEXT       &trans                 &trans
-&trans  &trans       &trans  &kp K_MUTE         &kp LEFT_BRACKET      &kp RIGHT_BRACKET        &kp LEFT_ARROW    &kp DOWN_ARROW        &kp UP_ARROW      &kp RIGHT_ARROW  &mt DOUBLE_QUOTES SQT  &trans
-&trans  &bootloader  &trans  &kp C_VOLUME_DOWN  &kp LEFT_BRACE        &kp RIGHT_BRACE          &kp LA(LG(DOWN))  &kp LA(LG(UP_ARROW))  &trans            &trans           &bootloader            &trans
-                             &trans             &trans                &trans                   &trans            &trans                &trans
+&trans  &kp ESCAPE   &mt PLUS EQUAL  &mt UNDERSCORE MINUS  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS    &none             &kp C_PREV            &kp C_PLAY_PAUSE   &kp C_NEXT       &trans                 &trans
+&trans  &trans       &kp ASTERISK    &kp SLASH             &kp LEFT_BRACKET      &kp RIGHT_BRACKET        &kp LEFT_ARROW    &kp DOWN_ARROW        &kp UP_ARROW       &kp RIGHT_ARROW  &mt DOUBLE_QUOTES SQT  &trans
+&trans  &bootloader  &kp GRAVE       &kp CAPS              &kp LEFT_BRACE        &kp RIGHT_BRACE          &kp LA(LG(DOWN))  &kp LA(LG(UP_ARROW))  &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &bootloader            &trans
+                                     &trans                &trans                &trans                   &kp K_MUTE        &trans                &trans
             >;
         };
     };
