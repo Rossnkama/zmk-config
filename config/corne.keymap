@@ -9,6 +9,8 @@
 
 &mt { flavor = "balanced"; };
 
+&lt { flavor = "balanced"; };
+
 / {
     behaviors {
         J_Parenth: J_Parenth {
