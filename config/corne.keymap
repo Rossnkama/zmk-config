@@ -42,6 +42,30 @@
         };
     };
 
+    combos {
+        compatible = "zmk,combos";
+
+        h_key {
+            bindings = <&kp H>;
+            key-positions = <18 38>;
+        };
+
+        j_key {
+            bindings = <&kp J>;
+            key-positions = <38 19>;
+        };
+
+        k_key {
+            bindings = <&kp K>;
+            key-positions = <38 20>;
+        };
+
+        l_key {
+            bindings = <&kp L>;
+            key-positions = <21 38>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
