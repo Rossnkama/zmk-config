@@ -14,67 +14,46 @@
 
 / {
     behaviors {
-        J_Parenth: J_Parenth {
+        virt_h: virt_h {
             compatible = "zmk,behavior-tap-dance";
-            label = "J_PARENTH";
+            label = "VIRT_H";
             #binding-cells = <0>;
-            bindings = <&kp J>, <&kp LEFT_PARENTHESIS>, <&kp RIGHT_PARENTHESIS>;
-
-            tapping-term-ms = <185>;
+            bindings = <&kp M>, <&kp H>;
         };
 
-        M_Parenth: M_Parenth {
+        virt_j: virt_j {
             compatible = "zmk,behavior-tap-dance";
-            label = "M_PARENTH";
+            label = "VIRT_J";
             #binding-cells = <0>;
-            bindings = <&kp M>, <&kp LEFT_BRACKET>, <&kp RIGHT_BRACKET>;
-
-            tapping-term-ms = <185>;
+            bindings = <&kp N>, <&kp J>;
         };
 
-        K_Parenth: K_Parenth {
+        virt_k: virt_k {
             compatible = "zmk,behavior-tap-dance";
-            label = "K_PARENTH";
+            label = "VIRT_K";
             #binding-cells = <0>;
-            bindings = <&kp K>, <&kp LEFT_BRACE>, <&kp RIGHT_BRACE>;
-
-            tapping-term-ms = <185>;
-        };
-    };
-
-    combos {
-        compatible = "zmk,combos";
-
-        h_key {
-            bindings = <&kp H>;
-            key-positions = <18 38>;
-        };
-
-        j_key {
-            bindings = <&kp J>;
-            key-positions = <38 19>;
-        };
-
-        k_key {
             bindings = <&kp K>;
-            key-positions = <38 20>;
         };
 
-        l_key {
-            bindings = <&kp L>;
-            key-positions = <21 38>;
+        virt_l: virt_l {
+            compatible = "zmk,behavior-tap-dance";
+            label = "VIRT_L";
+            #binding-cells = <0>;
+            bindings = <&kp I>, <&kp L>;
         };
     };
+
+    combos { compatible = "zmk,combos"; };
 
     keymap {
         compatible = "zmk,keymap";
 
         colmak {
             bindings = <
-&none  &kp Q             &kp W  &kp F               &kp P               &kp B                   &kp J                      &kp L                &kp U      &kp Y    &kp SEMI   &none
-&none  &mt LEFT_SHIFT A  &kp R  &mt LEFT_CONTROL S  &mt LEFT_COMMAND T  &mt LEFT_ALT G          &kp M                      &mt RIGHT_COMMAND N  &kp E      &kp I    &kp O      &none
-&none  &kp Z             &kp X  &kp C               &kp D               &kp V                   &kp K                      &kp H                &kp COMMA  &kp DOT  &kp SLASH  &none
-                                &kp LS(LA(SPACE))   &lt 2 ENTER         &mt LEFT_CONTROL TAB    &mt RIGHT_SHIFT BACKSPACE  &lt 3 SPACE          &to 1
+&none  &kp Q             &kp W  &kp F               &kp P               &kp B                   &kp J                      &kp L        &kp U      &kp Y    &kp SEMI             &none
+&none  &mt LEFT_SHIFT A  &kp R  &mt LEFT_CONTROL S  &mt LEFT_COMMAND T  &mt LEFT_ALT G          &virt_h                    &virt_j      &virt_k    &virt_l  &mt RIGHT_COMMAND O  &none
+&none  &kp Z             &kp X  &kp C               &kp D               &kp V                   &kp K                      &kp H        &kp COMMA  &kp DOT  &kp SLASH            &none
+                                &kp LS(LA(SPACE))   &lt 2 ENTER         &mt LEFT_CONTROL TAB    &mt RIGHT_SHIFT BACKSPACE  &lt 3 SPACE  &to 1
             >;
         };
 
