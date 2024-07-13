@@ -32,7 +32,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "VIRT_K";
             #binding-cells = <0>;
-            bindings = <&kp K>;
+            bindings = <&kp E>, <&kp K>;
         };
 
         virt_l: virt_l {
