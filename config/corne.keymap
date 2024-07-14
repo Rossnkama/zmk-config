@@ -13,36 +13,6 @@
 &lt { flavor = "balanced"; };
 
 / {
-    behaviors {
-        virt_h: virt_h {
-            compatible = "zmk,behavior-tap-dance";
-            label = "VIRT_H";
-            #binding-cells = <0>;
-            bindings = <&kp M>, <&kp H>;
-        };
-
-        virt_j: virt_j {
-            compatible = "zmk,behavior-tap-dance";
-            label = "VIRT_J";
-            #binding-cells = <0>;
-            bindings = <&kp N>, <&kp J>;
-        };
-
-        virt_k: virt_k {
-            compatible = "zmk,behavior-tap-dance";
-            label = "VIRT_K";
-            #binding-cells = <0>;
-            bindings = <&kp E>, <&kp K>;
-        };
-
-        virt_l: virt_l {
-            compatible = "zmk,behavior-tap-dance";
-            label = "VIRT_L";
-            #binding-cells = <0>;
-            bindings = <&kp I>, <&kp L>;
-        };
-    };
-
     combos { compatible = "zmk,combos"; };
 
     keymap {
@@ -50,10 +20,10 @@
 
         colmak {
             bindings = <
-&none  &kp Q             &kp W  &kp F               &kp P               &kp B                   &kp J                      &kp L        &kp U      &kp Y    &kp SEMI             &none
-&none  &mt LEFT_SHIFT A  &kp R  &mt LEFT_CONTROL S  &mt LEFT_COMMAND T  &mt LEFT_ALT G          &virt_h                    &virt_j      &virt_k    &virt_l  &mt RIGHT_COMMAND O  &none
-&none  &kp Z             &kp X  &kp C               &kp D               &kp V                   &kp K                      &kp H        &kp COMMA  &kp DOT  &kp SLASH            &none
-                                &kp LS(LA(SPACE))   &lt 2 ENTER         &mt LEFT_CONTROL TAB    &mt RIGHT_SHIFT BACKSPACE  &lt 3 SPACE  &to 1
+&none  &kp Q             &kp W    &kp F               &kp P               &kp B                   &kp J                      &kp L               &kp U      &kp Y    &kp SEMI             &none
+&none  &mt LEFT_SHIFT A  &lt 4 R  &mt LEFT_CONTROL S  &mt LEFT_COMMAND T  &mt LEFT_ALT G          &kp M                      &mt LEFT_COMMAND N  &kp E      &kp I    &mt RIGHT_COMMAND O  &none
+&none  &kp Z             &kp X    &kp C               &kp D               &kp V                   &kp K                      &kp H               &kp COMMA  &kp DOT  &kp SLASH            &none
+                                  &kp LS(LA(SPACE))   &lt 2 ENTER         &mt LEFT_CONTROL TAB    &mt RIGHT_SHIFT BACKSPACE  &lt 3 SPACE         &to 1
             >;
         };
 
@@ -93,6 +63,15 @@
 &trans  &trans       &kp ASTERISK    &mt LEFT_CONTROL SLASH  &mt LEFT_COMMAND LEFT_BRACKET  &mt LEFT_ALT RIGHT_BRACKET    &kp LEFT_ARROW    &kp DOWN_ARROW        &kp UP_ARROW       &kp RIGHT_ARROW  &mt DOUBLE_QUOTES SQT  &trans
 &trans  &bootloader  &kp GRAVE       &kp CAPS                &kp LEFT_BRACE                 &kp RIGHT_BRACE               &kp LA(LG(DOWN))  &kp LA(LG(UP_ARROW))  &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &bootloader            &trans
                                      &trans                  &kp K_MUTE                     &trans                        &trans            &trans                &trans
+            >;
+        };
+
+        vim_nav {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &kp H   &kp J   &kp K   &kp L   &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+                        &trans  &trans  &trans    &trans  &trans  &trans
             >;
         };
     };
