@@ -20,9 +20,9 @@
 
         colmak {
             bindings = <
-&none  &kp Q             &kp W    &kp F               &kp P               &kp B                   &kp J                      &kp L               &kp U      &kp Y    &kp SEMI             &none
-&none  &mt LEFT_SHIFT A  &lt 4 R  &mt LEFT_CONTROL S  &mt LEFT_COMMAND T  &mt LEFT_ALT G          &kp M                      &mt LEFT_COMMAND N  &kp E      &kp I    &mt RIGHT_COMMAND O  &none
-&none  &kp Z             &kp X    &kp C               &kp D               &kp V                   &kp K                      &kp H               &kp COMMA  &kp DOT  &kp SLASH            &none
+&none  &kp Q             &kp W    &kp F               &kp P               &kp B                   &kp J                      &kp L               &kp U      &kp Y    &kp SEMI   &none
+&none  &mt LEFT_SHIFT A  &lt 4 R  &mt LEFT_CONTROL S  &mt LEFT_COMMAND T  &mt LEFT_ALT G          &kp M                      &mt LEFT_COMMAND N  &kp E      &kp I    &kp O      &none
+&none  &kp Z             &kp X    &kp C               &kp D               &kp V                   &kp K                      &kp H               &kp COMMA  &kp DOT  &kp SLASH  &none
                                   &kp LS(LA(SPACE))   &lt 2 ENTER         &mt LEFT_CONTROL TAB    &mt RIGHT_SHIFT BACKSPACE  &lt 3 SPACE         &to 1
             >;
         };
