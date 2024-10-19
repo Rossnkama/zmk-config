@@ -13,7 +13,14 @@
 &lt { flavor = "balanced"; };
 
 / {
-    combos { compatible = "zmk,combos"; };
+    combos {
+        compatible = "zmk,combos";
+
+        Escape {
+            bindings = <&kp ESC>;
+            key-positions = <16 19>;
+        };
+    };
 
     macros {
         window_up: window_up {
