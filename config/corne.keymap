@@ -36,10 +36,10 @@
 
         colmak {
             bindings = <
-&none  &kp Q             &kp W    &kp F               &kp P               &kp B                   &kp J                      &kp L               &kp U            &kp Y    &kp SEMI   &none
-&none  &mt LEFT_SHIFT A  &lt 3 R  &mt LEFT_CONTROL S  &mt LEFT_COMMAND T  &mt LEFT_ALT G          &kp M                      &mt LEFT_COMMAND N  &kp E            &kp I    &kp O      &none
-&none  &kp Z             &kp X    &kp C               &kp D               &kp V                   &kp K                      &kp H               &kp COMMA        &kp DOT  &kp SLASH  &none
-                                  &kp LS(LA(SPACE))   &lt 1 ENTER         &mt LEFT_CONTROL TAB    &mt RIGHT_SHIFT BACKSPACE  &lt 2 SPACE         &lt 3 RG(GRAVE)
+&none  &kp Q             &kp W  &kp F               &kp P               &kp B                   &kp J                      &kp L               &kp U            &kp Y    &kp SEMI   &none
+&none  &mt LEFT_SHIFT A  &kp R  &mt LEFT_CONTROL S  &mt LEFT_COMMAND T  &mt LEFT_ALT G          &kp M                      &mt LEFT_COMMAND N  &kp E            &kp I    &kp O      &none
+&none  &kp Z             &kp X  &kp C               &kp D               &kp V                   &kp K                      &kp H               &kp COMMA        &kp DOT  &kp SLASH  &none
+                                &kp LS(LA(SPACE))   &lt 1 ENTER         &mt LEFT_CONTROL TAB    &mt RIGHT_SHIFT BACKSPACE  &lt 2 SPACE         &lt 0 RG(GRAVE)
             >;
         };
 
@@ -64,15 +64,6 @@
 &trans  &trans       &kp ASTERISK    &mt LEFT_CONTROL SLASH  &mt LEFT_COMMAND LEFT_BRACKET  &mt LEFT_ALT RIGHT_BRACKET    &kp LEFT_ARROW    &kp DOWN_ARROW        &kp UP_ARROW       &kp RIGHT_ARROW  &mt DOUBLE_QUOTES SQT  &trans
 &trans  &bootloader  &kp GRAVE       &kp CAPS                &kp LEFT_BRACE                 &kp RIGHT_BRACE               &kp LA(LG(DOWN))  &kp LA(LG(UP_ARROW))  &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &bootloader            &trans
                                      &trans                  &kp K_MUTE                     &trans                        &trans            &trans                &trans
-            >;
-        };
-
-        vim_nav {
-            bindings = <
-&trans  &trans  &trans  &window_up  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans      &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans      &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-                        &trans      &trans  &trans    &trans  &trans  &trans
             >;
         };
     };
