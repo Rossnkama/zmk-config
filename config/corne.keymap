@@ -61,8 +61,8 @@
         sys+brackets {
             bindings = <
 &trans  &kp ESCAPE   &mt PLUS EQUAL  &mt UNDERSCORE MINUS    &kp LEFT_PARENTHESIS           &kp RIGHT_PARENTHESIS         &kp C_PREV        &kp C_PP              &kp C_NEXT         &trans           &bt BT_NXT             &trans
-&trans  &bt BT_CLR   &kp ASTERISK    &mt LEFT_CONTROL SLASH  &mt LEFT_COMMAND LEFT_BRACKET  &mt LEFT_ALT RIGHT_BRACKET    &kp LEFT_ARROW    &kp DOWN_ARROW        &kp UP_ARROW       &kp RIGHT_ARROW  &mt DOUBLE_QUOTES SQT  &trans
-&trans  &bootloader  &kp GRAVE       &kp CAPS                &kp LEFT_BRACE                 &kp RIGHT_BRACE               &kp LA(LG(DOWN))  &kp LA(LG(UP_ARROW))  &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &bootloader            &trans
+&trans  &trans       &kp ASTERISK    &mt LEFT_CONTROL SLASH  &mt LEFT_COMMAND LEFT_BRACKET  &mt LEFT_ALT RIGHT_BRACKET    &kp LEFT_ARROW    &kp DOWN_ARROW        &kp UP_ARROW       &kp RIGHT_ARROW  &mt DOUBLE_QUOTES SQT  &trans
+&trans  &bootloader  &kp GRAVE       &kp CAPS                &kp LEFT_BRACE                 &kp RIGHT_BRACE               &kp LA(LG(DOWN))  &kp LA(LG(UP_ARROW))  &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &bt BT_CLR             &trans
                                      &trans                  &kp K_MUTE                     &trans                        &trans            &trans                &trans
             >;
         };
