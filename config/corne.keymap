@@ -19,6 +19,7 @@
         Escape {
             bindings = <&kp ESC>;
             key-positions = <16 19>;
+            timeout-ms = <100>;
         };
     };
 
